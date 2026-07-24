@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import styles from './Navbar.module.css';
 
@@ -21,7 +22,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
-          <span className="text-gradient">WhatsMaster</span>
+          <Image src="/logo.png" alt="WhatsMaster Tech Solutions" width={180} height={40} style={{ objectFit: 'contain' }} />
         </Link>
 
         <nav className={styles.desktopNav}>

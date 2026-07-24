@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Twitter, Linkedin, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import styles from './Footer.module.css';
 
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className={`container ${styles.footerGrid}`}>
         <div className={styles.brandSection}>
           <Link href="/" className={styles.logo}>
-            <span className="text-gradient">WhatsMaster</span>
+            <Image src="/logo.png" alt="WhatsMaster Tech Solutions" width={180} height={40} style={{ objectFit: 'contain' }} />
           </Link>
           <p className={styles.description}>
             Empowering businesses through artificial intelligence, innovation, and digital transformation. Building the future, today.
