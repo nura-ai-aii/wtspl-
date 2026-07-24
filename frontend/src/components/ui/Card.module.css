@@ -1,0 +1,70 @@
+.card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Variants */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.solid {
+  background: var(--bg-card-dark);
+  border: 1px solid var(--gray-800);
+}
+
+.neon {
+  background: var(--bg-dark);
+  border: 1px solid transparent;
+}
+
+.neonBorder {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: var(--neon-gradient);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .neonBorder {
+  opacity: 1;
+}
+
+/* Hover Effects */
+.lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px var(--primary-blue-glow);
+}
+
+.none:hover {
+  transform: none;
+  box-shadow: none;
+}

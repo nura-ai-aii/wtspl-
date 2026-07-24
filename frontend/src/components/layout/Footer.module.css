@@ -1,0 +1,137 @@
+.footer {
+  background: var(--bg-card-dark);
+  border-top: 1px solid var(--glass-border);
+  padding-top: 4rem;
+  margin-top: 4rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+.brandSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-space);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.description {
+  color: var(--gray-200);
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--white);
+  transition: all 0.2s ease;
+}
+
+.socialIcon:hover {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  transform: translateY(-2px);
+}
+
+.groupTitle {
+  font-family: var(--font-outfit);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.linkList a {
+  color: var(--gray-200);
+  transition: color 0.2s;
+  font-size: 0.95rem;
+}
+
+.linkList a:hover {
+  color: var(--primary-blue);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--gray-200);
+  font-size: 0.95rem;
+}
+
+.contactIcon {
+  color: var(--electric-cyan);
+}
+
+.bottomBar {
+  border-top: 1px solid var(--glass-border);
+  padding: 1.5rem 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bottomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  color: var(--gray-200);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .bottomContent {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.legalLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legalLinks a:hover {
+  color: var(--white);
+}

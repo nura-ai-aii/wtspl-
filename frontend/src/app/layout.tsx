@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk, Outfit } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -64,6 +65,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

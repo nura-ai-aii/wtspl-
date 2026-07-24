@@ -1,4 +1,7 @@
 import styles from './page.module.css';
+import HomeServices from '@/components/sections/HomeServices';
+import HomeProducts from '@/components/sections/HomeProducts';
+import HomeFounder from '@/components/sections/HomeFounder';
 
 export default function Home() {
   return (
@@ -36,7 +39,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* More sections will be added here: Stats, Services, Products, AI, Founder, Testimonials */}
+      <HomeServices />
+      <HomeProducts />
+      <HomeFounder />
+      
     </main>
   );
 }

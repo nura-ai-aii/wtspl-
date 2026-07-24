@@ -1,0 +1,59 @@
+.section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.default {
+  background: transparent;
+}
+
+.dark {
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.gradient {
+  background: radial-gradient(circle at center, rgba(31, 41, 55, 0.3) 0%, transparent 100%);
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: var(--font-space);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-outfit);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: var(--gray-200);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
